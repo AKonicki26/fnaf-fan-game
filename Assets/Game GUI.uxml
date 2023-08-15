@@ -1,4 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/Fnaf%20Free%20Roam%20GUI.uss?fileID=7433441132597879392&amp;guid=d3832f50132d64a40913dcdb9ab01936&amp;type=3#Fnaf Free Roam GUI" />
-    <ui:VisualElement name="stamina-bar" style="right: 1%; justify-content: flex-start; height: 7%; position: absolute; width: 33%; top: auto; left: auto; align-items: flex-start; flex-direction: column-reverse; bottom: 1%; display: flex; overflow: visible; background-color: rgba(0, 0, 0, 255);" />
-</ui:UXML>
