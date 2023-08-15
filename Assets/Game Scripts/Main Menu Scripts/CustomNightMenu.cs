@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Linq;
 
 public class CustomNightMenu : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class CustomNightMenu : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI[] AILevelIndicators = new TextMeshProUGUI[6];
+
+    private void Start() {
+        for (int i = 0; i < AILevelIndicators.Length; i++)
+            AILevelIndicators[i].text = NightInformation.AiLevels[i].ToString();
+    }
 
     public void IncreaseAiLevel(int index) {
         NightInformation.AiLevels[index] = Mathf.Clamp(NightInformation.AiLevels[index] + 1, 0, 20);
